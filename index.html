@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/static/images/favicon.ico" type="image/x-icon">
+  <meta property="og:image" content="/static/images/favicon.ico">
+  <meta property="og:image:secure_url" content="https://artimas.pccoeaimsa.org/static/images/logo_cropped.svg">
+  <meta property="og:image:alt" content="AiMSA">
+  <meta property="og:image:type" content="image/png">
+  <script type="application/ld+json">
+    </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anta|Gotu">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <title>INNOVSION 2024</title>
+</head>
+
+<body>
+  <canvas id="canvas"></canvas>
+
+  
+    <section id="section1">
+      <div class="nav-container">
+        <div class="navbar">
+          <div class="nav-logo">
+            <img class="nav-img" src="./logo1.png" alt="logo">
+            <h1 class="nav-text">INNOVISION</h1>
+          </div>
+          <div class="nav-links">
+            <span class="nav-items"><a class="nav-links" onclick="smoothScrollTo('section1')">HOME</a></span>
+            <span class="nav-items"><a class="nav-links" href="Community.html">COMMUNITY</a></span>
+            <button class="nav-btn" onclick="smoothScrollTo('section4')">
+              <a>EVENTS</a>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="landing-page-content">
+        <h2>JSPM's RSCOE Presents,</h2>
+        <h1 class="title">INNOVISION-2024</h1>
+        <p class="dates">20th &amp; 21st March</p>
+        <p class="sponsors">Title Sponsors - Chandraranga Group</p>
+        <p class="golden-sponsors">Golden Sponsors - Viral Fission, Chanakya Uni, HSBC Bank, IDBI Bank</p>
+        <button id="exploreBtn1" class="explore-btn">
+          Music
+        </button>
+        <button id="exploreBtn2" class="explore-without-sound">
+          Explore Without Music
+        </button>
+        <audio id="backgroundMusic" src="Event-Music.mp3" loop></audio>
+        <script>
+          const playMusicButton = document.getElementById('exploreBtn1');
+          const stopMusicButton = document.getElementById('exploreBtn2');
+          const backgroundMusic = document.getElementById('backgroundMusic');
+
+          playMusicButton.addEventListener('click', playMusic);
+          stopMusicButton.addEventListener('click', stopMusic);
+
+          function playMusic() {
+            backgroundMusic.play();
+          }
+
+          function stopMusic() {
+            backgroundMusic.pause();
+          }
+        </script>
+        <div id="scrollDiv" class="scroll-gif">
+          <img class="gif" src="./scroll.gif" alt="scroll">
+          <p>Scroll Down</p>
+        </div>
+      </div>
+    </section>
+
+    <div id="section3" class="majorsection">
+
+      <script>
+        function smoothScrollTo(targetId) {
+          const targetElement = document.getElementById(targetId);
+          if (targetElement) {
+            window.scrollTo({
+              top: targetElement.offsetTop,
+              behavior: 'smooth'
+            });
+          }
+        }
+      </script>
+      <section id="section2">
+        <h1 class="section-title">WHAT IS INNOVISION?</h1>
+        <div class="card-container">
+          <div class="row">
+            <div class="card">
+              <div class="image-holder">
+                <img class="card-models" src="./11.png" alt="img" />
+              </div>
+              <p class="about-card-title">Exciting Prizes</p>
+              <p class="about-card-text">
+                INNOVISION, provides a platform for participants to showcase their skills. It offers a prize pool of 5
+                lakhs and exciting prizes to motivate participants and make the event more rewarding.
+              </p>
+            </div>
+            <div class="card">
+              <div class="image-holder">
+                <img class="card-models" src="./2.png" alt="img" />
+              </div>
+              <p class="about-card-title">Schedule</p>
+              <p class="about-card-text">
+                Event is scheduled to take place on 20th and 21st March. It is an annual event that brings together
+                students, professionals, researchers, and industry experts to showcase their technical skills and
+                innovations.
+              </p>
+            </div>
+            <div class="card">
+              <div class="image-holder">
+                <img class="card-models" src="./3.png" alt="img" />
+              </div>
+              <p class="about-card-title">Opportunities</p>
+              <p class="about-card-text">
+                It is an excellent platform for participants to establish a good network with the people from different
+                parts of the country providing an opportunity to collaborate, and learn from each other.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="section4">
+        <div class="section-title">ALL EVENTS</div>
+        <div class="events-page-container">
+          <div class="event-container">
+            <div class="event-container-left">
+              <h2 class="box-title"> RSCOE: </h1>
+                <p class="eventname"> 🔹 <a target="_blank" class="event-name" href="CS.html">AVINYA 2.0
+                  </a> &nbsp; (Computer
+                  Department)<br></p>
+                <p class="eventname"> 🔹 <a target="_blank" class="event-name" href="mech.html">INNOVETEX-24</a>&nbsp;
+                  (Mech. Department)
+                  <br>
+                </p>
+                <p class="eventname"> 🔹 <a target="_blank" class="event-name" href="it.html">PRAKALPA
+                  </a> &nbsp; (IT department)<br>
+                </p>
+                <p class="eventname"> 🔹 <a target="_blank" class="event-name" href="Elect.html">TECHNOTSAV</a> &nbsp;
+                  (Elect.
+                  Department)<br></p>
+                <p class="eventname"> 🔹 <a target="_blank" class="event-name" href="First_Year.html">VRHorizon
+                  </a> &nbsp; (Engineering sciences and humanities)<br></p>
+                <p class="eventname"> 🔹 <a target="_blank" class="event-name" href="ENTC.html">DRONE ARCADE
+                  </a> &nbsp; (E&TC
+                  Department
+                  )<br></p>
+                <p class="eventname"> 🔹 <a target="_blank" class="event-name" href="Civil.html">TECHPRAAVI</a> &nbsp;
+                  (CIVIL
+                  Department)<br></p>
+                <p class="eventname"> 🔹 <a target="_blank" class="event-name" href="csbs.html">ABHYUDAYA</a> &nbsp;
+                  (CSBS
+                  Department)<br></p>
+                <p class="eventname"> 🔹 <a target="_blank" class="event-name" href="MBA.html">SHARK TANK</a>
+                  &nbsp; (MBA
+                  Department)<br></p>
+                <p class="eventname"> 🔹 <a target="_blank" class="event-name" href="MCA.html">TECHNO-MANTHAN-24</a>
+                  &nbsp; (MCA
+                  Department)<br></p>
+                <p class="eventname"> 🔹 <a target="_blank" class="event-name" href="AR.html">AUTOMATION
+                    ASCENSION </a> &nbsp;(A&R
+                  Department) <br></p>
+            </div>
+            <div class="event-container-right">
+              <h2 class="box-title"> Polytechnic: </h1>
+                <p class="eventname"> 🔹 <a target="_blank" class="event-name"
+                    href="Polytechnic_mech.html">MECHATHON</a>&nbsp;
+                  (Mech. Department)
+                  <br>
+                </p>
+                <p class="eventname"> 🔹 <a target="_blank" class="event-name" href="Polytechnic_comp.html">CODE MANIA
+                  </a> &nbsp; (Computer
+                  Department)<br></p>
+                <p class="eventname"> 🔹 <a target="_blank" class="event-name"
+                    href="Polytechnic_ENTC.html">TECHNO-GYAN</a> &nbsp;
+                  (E&TC Dept.)<br>
+                </p>
+                <p class="eventname"> 🔹 <a target="_blank" class="event-name" href="Polytechnic_civil.html">NIRMAAN</a>
+                  &nbsp;
+                  (Civil
+                  Department)<br></p><br>
+                <h2 class="box-title"> Pharmacy: </h1>
+                  <p class="eventname"> 🔹 <a target="_blank" class="event-name" href="#">REPLICA </a> &nbsp;
+                    (D & B Pharm)<br>
+                  </p><br>
+                  <h2 class="box-title"> B.Ed: </h1>
+                    <p class="eventname"> 🔹 <a target="_blank" class="event-name" href="#">ESSAY
+                        WRITING </a><br></p><br>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+    </div>
+    </section>
+    <script>
+      function websiteVisits(response) {
+        document.querySelector('#visits').textContent = response.value;
+      }
+      const showAnswer = () => {
+        const ans = document.getElementById('answerdiv');
+        const plus_btn = document.getElementById('plus_btn');
+        const minus_btn = document.getElementById('minus_btn');
+
+        ans.style.transition = 'all 2s';
+        ans.style.display = 'block';
+        plus_btn.style.display = 'none';
+        minus_btn.style.display = 'block';
+      };
+      const hideAnswer = () => {
+        const ans = document.getElementById('answerdiv');
+        const plus_btn = document.getElementById('plus_btn');
+        const minus_btn = document.getElementById('minus_btn');
+
+        ans.style.transition = 'all 2s';
+        ans.style.display = 'none';
+        plus_btn.style.display = 'block';
+        minus_btn.style.display = 'none';
+      };
+    </script>
+
+
+
+
+  <footer id="section5">
+    <div class="footer">
+      <div class="top">
+        <img class="footer-logo" src="./logo1.png" alt="logo">
+        <div class="footer-text">
+          <h1 class="footer-title " id="footer-1">INNOVISION</h1>
+          <p class="footer-tagline">वसुधैव कुटुंबकम्</p>
+        </div>
+        <img class="footer-logo" src="./logo2.png" alt="logo">
+      </div>
+      <div class="description-event">
+        <p>
+          INNOVISION a National Level Technical Symposium event which aims to bring together students,
+          professionals, and industry experts from different parts of the country to showcase their technical
+          skills, knowledge, and innovations.
+        </p>
+      </div>
+
+      <div class="mid">
+        <div class="sponsors">
+          <div class="co-ordinator-div">
+            <h4 class="mid-footer-titles">Our Sponsors</h4>
+            <img class="sponsors-img" src="sponsors.png" alt="sponsors">
+          </div>
+
+        </div>
+
+        <div class="address">
+          <h4 class="mid-footer-titles">Contact us</h4>
+          <p class="mid-footer-content">
+            Address: JSPM Rajarshi shahu college of engineering ,
+            Tathawade, Service Rd, Ashok Nagar, Tathawade,
+            Pimpri-Chinchwad, Maharashtra 411033.
+          </p>
+          <br>
+          <p class="mid-footer-content">Phone: +91 9850627659</p>
+
+          <h4 class="mid-footer-titles">JSPM's Corporate Office</h4>
+          <p class="mid-footer-content">
+            Address: S.No 84/2E/1/5, 3rd Floor, Sawant Corner, Katraj, Pune,Maharashtra 411046
+          </p>
+          <br>
+          <p class="mid-footer-content">Phone: 020- 24317380/83/84/85</p>
+        </div>
+
+        <div class="connection">
+          <h4 class="mid-footer-titles">Let’s stay connected</h4>
+          <p class="connection-content">
+            Send us an email with your views; we'd love to hear from you.
+          </p>
+
+          <div class="mail-box">
+            <input class="mail" placeholder="Your Message" autocomplete="true" type="text" name="mail-text">
+            <a href="mailto:info@jspm.edu.in"><input class="send-mail" type="submit"></a>
+          </div>
+
+          <h4 class="mid-footer-titles">Follow us</h4>
+          <div class="footer-social-icon">
+            <a target="_blank" href="https://www.instagram.com/jspmrscoe_official/" class="footer-social-icons">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a target="_blank" href="https://www.linkedin.com/school/jspm-s-rajarshi-shahu-college-of-engineering/"
+              class="footer-social-icons">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a target="_blank" href="https://www.facebook.com/rscoepune" class="footer-social-icons">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="bottom">
+        <p class="designers">
+          Designed and Developed with &nbsp; <i style="color: rgb(255, 0, 0);" class="fa-solid fa-heart"></i>
+          &nbsp; By
+          <a class="name-student" href="https://www.linkedin.com/in/sunit-kapure-85944423a/" target="_blank">
+            Sunit_K ,
+          </a>
+          <a class="name-student" href="https://www.linkedin.com/in/kshitij-todkar-95b59b267/" target="_blank">
+            Kshitij_T
+          </a>
+          &
+          <a class="name-student" href="https://www.linkedin.com/in/prithvi-more-a5a61b2b7/" target="_blank">
+            Prithvi_M.
+          </a>
+        </p>
+        <p class="disclaimer">
+          © INNOVISION-2024. All rights reserved. The material and
+          content on this site may not be reproduced, distributed,
+          transmitted, cached or otherwise used, except with the prior
+          written permission of team INNOVISION.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
